@@ -1,0 +1,53 @@
+<html>
+
+<head lang="vi" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> ❣ Chúc mừng 8/3 ❣ </title>
+    <link rel="shortcut icon" href="../rose.png">
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+    <link rel="stylesheet" type="text/css" href="style_heart.css">
+    
+</head>
+
+
+<body>
+
+
+    <canvas id="canvas">
+       
+    </canvas>
+    <div id="container">
+        <a style="text-decoration:none" , href="../index.html" class="followlink">
+            <h1>Double click to go to my heart ...</h1>
+        </a>
+        <div class="heart-like-button liked">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        const button = document.querySelector(".heart-like-button");
+
+        button.onclick = event=> {
+            if (event.detail === 1) {
+                if (button.classList.contains("liked")) {
+                    button.classList.remove("liked");
+                } else {
+                    button.classList.add("liked");
+                }
+            } else if (event.detail === 2) {
+                document.querySelector(".followlink").click();
+            }
+            };
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+
+</body>
+
+</html>
+
+
+<script src="script.js"></script>
