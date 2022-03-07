@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "gl-matrix-vec2": "^2.2.1-npm"
+  }
+}
